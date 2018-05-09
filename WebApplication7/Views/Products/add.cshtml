@@ -1,0 +1,40 @@
+﻿@model Product
+@{
+    ViewBag.Title = "add";
+}
+
+<h2>add</h2>
+
+@using (Html.BeginForm(FormMethod.Post))
+{
+    <label for="name">Name:</label>
+    <input type="text" name="name" value=" " />
+
+    <br />
+    <br />
+    <label for="price">Price:</label>
+    <input type="text" name="Price" value=" " />
+
+
+    <br />
+    <br />
+    <label for="pic">photo:</label>
+    <input type="file" name="picture" value=" " />
+
+    <br />
+    <br />
+    <label for="detail">Detail:</label>
+    <textarea name="detail"></textarea>
+
+    <br />
+    <br />
+
+    <label for="name">Category Id:</label>
+    <input type="text" name="Catid" value=" " />
+
+
+
+    <input type="submit" name="btnsub" value="add">
+
+}
+
